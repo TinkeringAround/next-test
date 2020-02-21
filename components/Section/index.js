@@ -1,16 +1,10 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 // Styles
 import { colors, TColor } from '../../styles'
 
 // ===========================================================
-interface Props {
-  height?: string
-  background?: TColor
-}
-
-// ===========================================================
-const Section: FC<Props> = ({ children, height = '35rem', background = 'blue' }) => (
+const Section = ({ children, height = '35rem', background = 'blue' }) => (
   <div
     style={{
       height: height,

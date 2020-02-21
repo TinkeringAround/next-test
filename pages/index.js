@@ -1,15 +1,15 @@
-import React, { FC } from 'react'
+import React from 'react'
 
 // Components
 import Section from '../components/Section'
 import Introduction from '../components/Introduction'
 
 // ===========================================================
-const Home: FC = () => (
-  <>
+const Home = () => (
+  <React.Fragment>
     <Introduction />
-    <Section background="white">Test</Section>
-  </>
+    <Section background="white"></Section>
+  </React.Fragment>
 )
 
 export default Home

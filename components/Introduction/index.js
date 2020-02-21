@@ -1,20 +1,30 @@
-import React, { FC } from 'react'
+import React from 'react'
 import Typical from 'react-typical'
 
 // Styles
-import { colors } from '../styles'
-import './Introduction.module.css'
+import { colors } from '../../styles'
 
 // Components
-import Section from './Section'
+import Section from '../Section'
 
 // ===========================================================
-const Introduction: FC = () => (
+const Introduction = () => (
   <Section>
-    <div className="intro">
+    <div
+      style={{
+        height: 'inherit',
+        width: '80%',
+        margin: '0 auto',
+        display: 'flex',
+        flexDirection: 'column',
+        justifyContent: 'flex-end'
+      }}
+    >
       <h1 style={{ fontSize: '5rem', color: colors['white'], margin: '0' }}>4ACES</h1>
       <Typical
         steps={[
+          '',
+          250,
           'Autonomous.',
           250,
           'Autonomous. Connected.',
@@ -27,6 +37,14 @@ const Introduction: FC = () => (
         loop={Infinity}
         wrapper="h2"
       />
+      <style jsx>{`
+        h2 {
+          margin: 0.75rem 0 8rem;
+
+          font-size: 1rem;
+          color: ${colors['white']};
+        }
+      `}</style>
     </div>
   </Section>
 )

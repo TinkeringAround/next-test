@@ -1,5 +1,4 @@
 import React from 'react'
-import { AppProps } from 'next/app'
 
 // Styles
 import '../styles/index.css'
@@ -8,7 +7,7 @@ import '../styles/index.css'
 import Header from '../components/Header'
 
 // ==============================================
-const MyApp = ({ Component, pageProps }: AppProps) => (
+const MyApp = ({ Component, pageProps }) => (
   <>
     <Header />
     <Component {...pageProps} />
