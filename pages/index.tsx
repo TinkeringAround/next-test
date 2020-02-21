@@ -1,18 +1,15 @@
-import React, { FC, useContext } from "react";
+import React, { FC } from 'react'
 
-// Context
-import { AppContext } from "../context";
+// Components
+import Section from '../components/Section'
+import Introduction from '../components/Introduction'
 
-// ==============================================
-const Home: FC = () => {
-  const { name } = useContext(AppContext);
+// ===========================================================
+const Home: FC = () => (
+  <>
+    <Introduction />
+    <Section background="white">Test</Section>
+  </>
+)
 
-  return (
-    <div>
-      <h1>This is the Home</h1>
-      <p>{name}</p>
-    </div>
-  );
-};
-
-export default Home;
+export default Home

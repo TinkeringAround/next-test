@@ -1,0 +1,54 @@
+/* Fonts */
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-SemiBold.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-ExtraBold.woff2') format('woff2');
+  font-weight: 900;
+}
+
+body {
+  font-family: 'Inter', 'Arial', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Breakpoints */
+@media (max-width: 950px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 950px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1500px) {
+  html {
+    font-size: 22px;
+  }
+}

@@ -1,23 +1,18 @@
-import React, { useState } from "react";
-import { AppProps } from "next/app";
+import React from 'react'
+import { AppProps } from 'next/app'
 
-// Contexts
-import { AppContext } from "../context/";
+// Styles
+import '../styles/index.css'
+
+// Components
+import Header from '../components/Header'
 
 // ==============================================
-const MyApp = ({ Component, pageProps }: AppProps) => {
-  const [name, setName] = useState<string>("Next-Test");
+const MyApp = ({ Component, pageProps }: AppProps) => (
+  <>
+    <Header />
+    <Component {...pageProps} />
+  </>
+)
 
-  return (
-    <AppContext.Provider
-      value={{
-        name: name,
-        setName: setName
-      }}
-    >
-      <Component {...pageProps} />
-    </AppContext.Provider>
-  );
-};
-
-export default MyApp;
+export default MyApp
